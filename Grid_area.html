@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Domestika</title>
+  </head>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  background: #e0e0e0;
+}
+
+.container{
+  display: grid;
+  grid-template-areas: 
+      "header header header header"
+      "wrapper wrapper wrapper wrapper"
+      "wrapper wrapper wrapper wrapper"
+      "wrapper wrapper wrapper wrapper"
+      "wrapper-2 wrapper-2 wrapper-2 wrapper-2"
+      "footer footer footer footer";
+  width: 100%;
+  height: 100vw;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.item{
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.header{
+  display: grid;
+  grid-area: header;
+  background-color: aqua;
+  background-image: url(https://cdn-sites-images.46graus.com/files/portfolio/2602/7f74347c-7f95-4e2f-89f5-bf515202cfc2/original_a1a6c8bb-d7ce-4e36-963e-f5682779b3d8.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center 30%;
+  align-items: center;  
+  border-bottom: 2rem solid yellow;
+}
+
+.wrapper{
+  grid-area: wrapper;
+  height: 100vh;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas:  
+  "b c d"                 
+  "b e d"
+  "f f d";
+  padding: 4rem 2rem 4rem 2rem;
+  
+  border-bottom: 2rem solid yellow;
+}
+
+.wrapper-2{
+  background: rgb(203, 201, 201);
+  grid-area: wrapper-2;
+  height: 100vh;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas:  
+  "g h i j"
+  "k l m n";
+  padding: 7rem 2rem 5rem 2rem;
+  border-bottom: 2rem solid yellow;
+}
+  
+
+.footer{
+  display: grid;
+  grid-area: footer;
+  background-color: black;
+  height: 20vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+a{
+  color: gray;
+  text-decoration: none;
+}
+
+
+.item{
+  border-radius: 2rem;
+}
+
+.item:hover{
+  filter: drop-shadow(16px 16px 20px yellow);
+}
+
+.b{
+  grid-area: b;
+  background-image: url(https://i.pinimg.com/564x/30/ff/6f/30ff6fb35e1d33c0a4bcc93800635223.jpg);
+  background-size: cover;
+  background-position: 60%;
+}
+
+.c{
+  grid-area: c;
+  background-image: url(https://i.pinimg.com/564x/c2/05/62/c20562a74c5500636a76963b2c1bc735.jpg);
+  background-size: cover;
+  background-position: center 10%;
+}
+
+.d{
+  grid-area: d;
+  background-image: url(https://i.pinimg.com/564x/1b/af/f7/1baff7d5ccb52660114708b53aea3ddf.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.e{
+  grid-area: e;
+  background-image: url(https://i.pinimg.com/564x/47/a3/0f/47a30f145f3ed839b3ae850155837b9f.jpg);
+  background-size: cover;
+  background-position: center 20%;
+}
+
+.f{
+  grid-area: f;
+  background-image: url(https://i.pinimg.com/564x/27/01/c1/2701c18ef75ec4454fe094eaeb08782d.jpg);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.g{
+  grid-area: g;
+  background-image: url(https://i.pinimg.com/564x/3a/3f/98/3a3f98a42eee1ef9696b4c385a7542f8.jpg);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.h{
+  grid-area: h;
+  background-image: url(https://i.pinimg.com/564x/38/68/ba/3868ba4a728140ce0ad14764ab9cb8a5.jpg);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.i{
+  grid-area: i;
+  background-image: url(https://i.pinimg.com/564x/c4/27/1f/c4271f5c5b5fdcceaddef8c7ed3715cc.jpg);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.j{
+  grid-area: j;
+  background-image: url(https://i.pinimg.com/564x/94/a8/d1/94a8d1b92cd0507f28e34dc2670d46bd.jpg);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.k{
+  grid-area: k;
+  background-image: url(https://thewomensbuildingblog.files.wordpress.com/2018/01/b1a44e3354d2cfbb7d0626c25b4b7e19-local-artists-oil-paintings.jpg?w=600&resize=600%2C486);
+  background-size: cover;
+  background-position: center;
+}
+
+.l{
+  grid-area: l;
+  background-image: url(https://i.pinimg.com/564x/19/08/68/1908682695f9c30addd0009408a64f42.jpg);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.m{
+  grid-area: m;
+  background-image: url(https://i.pinimg.com/564x/9a/36/db/9a36db8c9ee18a818429fbc92097f8ac.jpg);
+  background-size: cover;
+  background-position: center 20%;
+}
+
+.n{
+  grid-area: n;
+  background-image: url(https://i.pinimg.com/564x/d8/2e/b4/d82eb4f1f9550fc1b8ee91a0646f1203.jpg);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+em{
+  font-weight: 100;
+  background-color: yellow;
+  
+}
+
+a:hover{
+  filter: drop-shadow(10px 10px 10px yellow);
+
+}
+
+@media (max-width: 1000px){
+  .wrapper{
+    grid-template-areas:  
+    "b b d"                 
+    "c c d"
+    "e f f";
+  }
+
+  .wrapper-2{
+    grid-template-areas:  
+    "g h"
+    "j k"
+    "l i" 
+    "m n";
+  }
+
+
+  @media (max-width: 500px){
+  .footer{
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5rem;
+  }
+
+  .wrapper{
+    grid-template-areas:
+    "b" 
+    "c"
+    "d" 
+    "e" 
+    "f";
+  }
+  }
+}
+
+
+  </style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Surrealism <em> is alive</em></h3>
+      </div>     
+      <div class="wrapper">
+        <div class="item b"></div>     
+        <div class="item c"></div>     
+        <div class="item d"></div>     
+        <div class="item e"></div>     
+        <div class="item f"></div>              
+      </div>
+      <div class="wrapper-2">
+        <div class="item g"></div>     
+        <div class="item h"></div>     
+        <div class="item i"></div>
+        <div class="item j"></div>
+        <div class="item k"></div>
+        <div class="item l"></div>
+        <div class="item m"></div>
+        <div class="item n"></div>
+      </div>
+      <div class="footer">
+          <a href="https://jackusephot.46graus.com/artworks/" target="blank">Jack Usepot <em> website</em></a>
+          <a href="https://blog.artsper.com/en/a-closer-look/10-surrealist-paintings-you-should-know/" target="blank">More classic <em> surrealism</em></a>  
+          <a href="https://www.behance.net/pepey" target="blank">Ferdi Rizkiyanto <em> website</em></a> 
+          <a href="https://developer.mozilla.org/es/docs/Web/CSS/grid" target="blank">I used <em>CSS Grid</em></a>         
+        </div> 
+      </div>
+    </div>
+  </body>
+</html>
